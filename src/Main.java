@@ -12,6 +12,12 @@ public class Main {
             if (choice == 1) {
                 System.out.println(arabCalc(Input.next("Введите выражение: ")));
                 System.out.println();
+            } else if (choice == 2) {
+                System.out.println(romeCalc(Input.next("Введите выражение: ")));
+                System.out.println();
+            } else {
+                System.out.println("Некорректный ввод!");
+                System.out.println();
             }
         } while (choice != 3);
 
@@ -19,6 +25,10 @@ public class Main {
     }
 
     public static String arabCalc(String input) {
+        return input;
+    }
+
+    public static String romeCalc(String input) {
         return input;
     }
 

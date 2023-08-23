@@ -28,7 +28,7 @@ public class Main {
             for (int k = 0; k < actions.length; k++) {
                 if (input.contains(actions[k])) {
                     regex = actions[k];
-                } else k++;
+                }
             }
         }
         return regex;
@@ -36,7 +36,7 @@ public class Main {
 
 
     public static String arabCalc(String input) {
-        return input;
+        return defineRegex(input);
     }
 
     public static String romeCalc(String input) {

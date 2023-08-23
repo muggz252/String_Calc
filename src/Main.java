@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,9 +19,21 @@ public class Main {
                 System.out.println();
             }
         } while (choice != 3);
-
-
     }
+
+    public static String defineRegex(String input){
+        String regex = "";
+        String[] actions = {"+", "-", "*", "/"};
+        for (int i = 0; i < input.length(); i++) {
+            for (int k = 0; k < actions.length; k++) {
+                if (input.contains(actions[k])) {
+                    regex = actions[k];
+                } else k++;
+            }
+        }
+        return regex;
+    }
+
 
     public static String arabCalc(String input) {
         return input;
